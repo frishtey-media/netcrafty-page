@@ -570,9 +570,9 @@ copyright-style-one .ft-menu li a {
   background-color: transparent;
   background: linear-gradient(95deg, #059dff 15%, #F8AC23 45%, #F92222 75%, #fb5343) 95%/200% 100%;
   transition-duration: .3s;
-  color: #fff;
+  color: #fff !important;
   text-align: center;
-  text-transform: none;
+  text-transform: none !important;
   font-family: "Bahnschrift" !important;
   width: 75%;
 }

@@ -14,10 +14,10 @@ const Footer = () => {
                                 </h4>
                                 <div className="inner">
                                     <ul className="footer-link link-hover color-light ">
-                                        <li><Link href="/about ">About</Link></li>
-                                        <li><Link href="/portfolio">Portfolio</Link></li>
-                                        <li><Link href="/contact">Contact</Link></li>
-                                        <li><Link href="/service">Service</Link></li>
+                                        <li><Link href="#">About</Link></li>
+                                        <li><Link href="#">Portfolio</Link></li>
+                                        <li><Link href="#">Contact</Link></li>
+                                        <li><Link href="#">Service</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -30,10 +30,10 @@ const Footer = () => {
                                     </h4>
                                     <div className="inner ">
                                         <ul className="footer-link link-hover">
-                                            <li><Link href="/pricing">Pricing</Link></li>
-                                            <li><Link href="/team">Team</Link></li>
-                                            <li><Link href="/advance-tab">Advance Tab</Link></li>
-                                            <li><Link href="/service">Service</Link></li>
+                                            <li><Link href="#">Pricing</Link></li>
+                                            <li><Link href="#">Team</Link></li>
+                                            <li><Link href="#">Advance Tab</Link></li>
+                                            <li><Link href="#">Service</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -46,10 +46,10 @@ const Footer = () => {
                                 </h4>
                                 <div className="inner">
                                     <ul className="footer-link link-hover">
-                                        <li><Link href="/gallery">Gallery</Link></li>
-                                        <li><Link href="/about-us">About Us</Link></li>
-                                        <li><Link href="/testimonial">Testimonial</Link></li>
-                                        <li><Link href="/timeline">Timeline</Link></li>
+                                        <li><Link href="#">Gallery</Link></li>
+                                        <li><Link href="#">About Us</Link></li>
+                                        <li><Link href="#">Testimonial</Link></li>
+                                        <li><Link href="#">Timeline</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -121,7 +121,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/contact">
+                                        <Link href="/">
                                             <span className="theme-gradient" style={{ fontWeight: '600' }}>
                                                 Contact Us
                                             </span>
@@ -140,52 +140,6 @@ const Footer = () => {
             </div>
         </footer>
     )
-
-    /*return (
-        <footer>
-            <Box p={4} sx={{
-                maxWidth: '100%',
-                color: 'white',
-                height: 150,
-                backgroundColor: 'rgba(0,0,0)',
-                boxShadow:'0px 0px 2px 0px grey'
-            }}>
-                <Stack alignItems={"center"} justifyContent={"center"}>
-                    <Typography>
-                        This is Footer.
-                    </Typography>
-                </Stack>
-                {/*<hr style={{ width: '75%', marginRight: "auto", marginLeft: "auto" }} />
-
-            </Box>
-            <Box p={2} sx={{
-                maxWidth: '100%',
-                color: 'white',
-                height: 60,
-                backgroundColor: 'rgba(0,0,0,0.9)',
-                borderTop: '1px solid hsla(0,0%,100%,0.1)'
-            }}>
-                <Stack direction={"row"} alignItems={"center"} justifyContent={"space-around"}>
-                    <Stack spacing={2} direction={"row"} alignItems={"center"} justifyContent={"center"}>
-                        <Link href="/">
-                            Privacy Policy
-                        </Link>
-                        <Divider orientation="vertical" flexItem sx={{ borderColor: "rgba(255, 255, 255, 1)" }} />
-                        <Link href="/">
-                            Terms and Conditions
-                        </Link>
-                        <Divider orientation="vertical" flexItem sx={{ borderColor: "rgba(255, 255, 255, 1)" }} />
-                        <Link href="/">
-                            Contact Us
-                        </Link>
-                    </Stack>
-                    <Typography >
-                        © NetCrafty 2023
-                    </Typography>
-                </Stack>
-            </Box>
-        </footer>
-    );*/
 };
 
 export default Footer;
