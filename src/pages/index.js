@@ -46,7 +46,7 @@ export default function Home() {
                     />
                   </Link>
                   <h5>Ready To Scale Your Business?</h5>
-                  <h1 className='fw-bold'>We'll Manage Your Advertising Campaigns For FREE Until You Get Results!</h1>
+                  <h1 className='fw-bold'>We&#39;ll Manage Your Advertising Campaigns For FREE Until You Get Results!</h1>
                   <Button size='large' className="btn-default">
                     <h3 style={{ marginBottom: '0rem' }}>Sign Up</h3>
                   </Button>
@@ -92,7 +92,7 @@ export default function Home() {
                   Meta Ad Campaign
                 </Typography><br />
                 <Typography variant='h6'>
-                  We'll create, manage and optimise a highly effective ad campaign to drive qualified leads to your customised landing page. We'll use precise targeting options to find your ideal prospects and make them want to click your ad.
+                  We&#39;ll create, manage and optimise a highly effective ad campaign to drive qualified leads to your customised landing page. We&#39;ll use precise targeting options to find your ideal prospects and make them want to click your ad.
                 </Typography>
               </Stack>
             </Grid>
@@ -120,7 +120,7 @@ export default function Home() {
                       Landing Page
                     </Typography><br />
                     <Typography variant='h6'>
-                      We'll design and build a landing page explicitly engineered for conversions. We'll align the landing page's intentions with the ad's messaging to ensure the prospect flows effortlessly through your sales funnel.
+                      We&#39;ll design and build a landing page explicitly engineered for conversions. We&#39;ll align the landing page&#39;s intentions with the ad&#39;s messaging to ensure the prospect flows effortlessly through your sales funnel.
                     </Typography>
                   </Stack>
                 </Grid>
@@ -135,7 +135,7 @@ export default function Home() {
                       Landing Page
                     </Typography><br />
                     <Typography variant='h6'>
-                      We'll design and build a landing page explicitly engineered for conversions. We'll align the landing page's intentions with the ad's messaging to ensure the prospect flows effortlessly through your sales funnel.
+                      We&#39;ll design and build a landing page explicitly engineered for conversions. We&#39;ll align the landing page&#39;s intentions with the ad&#39;s messaging to ensure the prospect flows effortlessly through your sales funnel.
                     </Typography>
                   </Stack>
                 </Grid>
@@ -173,9 +173,9 @@ export default function Home() {
                   Booking System
                 </Typography><br />
                 <Typography variant='h6'>
-                  We'll create an automated booking system for your business.<br /><br />
+                  We&#39;ll create an automated booking system for your business.<br /><br />
                   A seamless process that allows your prospects to select their own call/appointment time.<br /><br />
-                  If you're an E-commerce brand, we'll install a product page for prospects to buy from you instantly.
+                  If you&#39;re an E-commerce brand, we&#39;ll install a product page for prospects to buy from you instantly.
                 </Typography>
               </Stack>
             </Grid>
