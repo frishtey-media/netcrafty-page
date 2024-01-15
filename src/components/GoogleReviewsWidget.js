@@ -1,5 +1,3 @@
-// components/ElfSightWidget.js
-
 import React, { useEffect } from 'react';
 
 const GoogleReviewsWidget = () => {

@@ -634,3 +634,7 @@ copyright-style-one .ft-menu li a {
   color: var(--logo-golden-color) !important;
   font-size: calc(1.375rem + 1.5vw) !important;
 }
+
+.jdVdAT a {
+  background-color: black !important;
+}

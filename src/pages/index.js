@@ -6,7 +6,7 @@ import { Button, Container, Divider, Grid, Stack, Toolbar, Typography, useMediaQ
 import Footer from '@/components/footer'
 import ContactPopup from '@/components/ContactPopup'
 import { useState } from 'react'
-import GoogleReviewsWidget from '@/components/GoogleReviewsWidget'
+import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 
 const inter = Inter({ subsets: ['latin'] });
 
