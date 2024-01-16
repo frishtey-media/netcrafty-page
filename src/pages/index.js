@@ -7,6 +7,10 @@ import Footer from '@/components/footer'
 import ContactPopup from '@/components/ContactPopup'
 import { useState } from 'react'
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
+import CalendlyWidget from '@/components/CalendlyWidget'
+import CalendlyWidget2 from '@/components/CalendlyWidget2'
+import Clients from '@/components/Clients'
+import ClientWidget from '@/components/ClientWidget'
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -195,37 +199,17 @@ export default function Home() {
       </Container>
 
       <Toolbar />
+
+      <CalendlyWidget2 />
+
+      <Toolbar />
       <Toolbar />
 
-      <Container>
-        <h1 className='text-center text-golden fw-bold'>
-          Our Awesome Clients
-        </h1>
-        <div className="row mt-2 mb-4">
-          <div className="col-lg-12 mt--10">
-            <ul className="brand-list brand-style-2 variation-2">
-              <li>
-                <img src="/logos/roopam.png" alt="Roopam by Somsons" />
-              </li>
-              <li>
-                <img src="/logos/rg-wealth.jpg" alt="RG Wealth" />
-              </li>
-              <li>
-                <img src="/logos/lakme.png" alt="Lakme" />
-              </li>
-              <li>
-                <img src="/logos/vikas.png" alt="Vikas Bansal & Associates" />
-              </li>
-              <li>
-                <img src="/logos/gtech.png" alt="Gtech Mansa" />
-              </li>
-              <li>
-                <img src="/logos/recode7.png" alt="Recode7" style={{ marginTop: '18px' }} />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </Container>
+      {/* <Clients /> */}
+      <h1 className='text-center text-golden fw-bold'>
+        Our Awesome Clients
+      </h1>
+      <ClientWidget />
 
       <Toolbar />
 
@@ -235,7 +219,6 @@ export default function Home() {
 
       <Toolbar />
 
-      {/* <CalendlyWidget /> */}
       <ContactPopup open={open} handleClose={handleClose} />
 
       <Footer />

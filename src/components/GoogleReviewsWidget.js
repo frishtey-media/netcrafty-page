@@ -6,6 +6,15 @@ const GoogleReviewsWidget = () => {
         script.src = 'https://static.elfsight.com/platform/platform.js';
         script.setAttribute('data-use-service-core', '');
         script.defer = true;
+
+        script.onload = () => {
+            const anchorElement = document.querySelector('.jdVdAT a');
+
+            if (anchorElement) {
+                anchorElement.style.backgroundColor = 'black';
+            }
+        };
+
         document.body.appendChild(script);
 
         return () => {
@@ -14,7 +23,9 @@ const GoogleReviewsWidget = () => {
     }, []);
 
     return (
-        <div className="elfsight-app-983c7634-aed4-4276-8670-4f6bcba12bdd" data-elfsight-app-lazy></div>
+        <>
+            <div className="elfsight-app-983c7634-aed4-4276-8670-4f6bcba12bdd" data-elfsight-app-lazy></div>
+        </>
     );
 };
 

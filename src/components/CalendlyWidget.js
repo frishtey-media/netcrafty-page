@@ -1,21 +1,40 @@
 // components/CalendlyWidget.js
 
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const CalendlyWidget = () => {
     useEffect(() => {
         const script = document.createElement('script');
         script.src = 'https://assets.calendly.com/assets/external/widget.js';
         script.async = true;
+
+        script.onload = () => {
+            if (window.Calendly) {
+                window.Calendly.initBadgeWidget({
+                    url: 'https://calendly.com/netcrafty/client-consultation?background_color=1a1a1a&text_color=ffffff&primary_color=f8ac23',
+                    text: 'Schedule meeting with us.',
+                    color: '#f8ac23',
+                    textColor: '#1a1a1a',
+                    branding: true,
+                });
+            }
+        };
+
         document.body.appendChild(script);
 
         return () => {
-            document.body.removeChild(script);
+            // Cleanup Calendly widget when the component is unmounted
+            if (window.Calendly) {
+                window.Calendly.destroyBadgeWidget();
+            }
         };
     }, []);
 
     return (
-        <div className="calendly-inline-widget" data-url="https://calendly.com/netcrafty/client-consultation?hide_gdpr_banner=1&background_color=1a1a1a&text_color=ffffff&primary_color=f8ac23" style={{ minWidth: '320px', height: '700px' }}></div>
+        <>
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+            <div id="calendly-badge-container" />
+        </>
     );
 };
 

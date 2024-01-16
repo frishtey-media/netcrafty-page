@@ -628,13 +628,22 @@ copyright-style-one .ft-menu li a {
   transform: scale(1.1);
 }
 
-
+.clients-slider {
+  opacity: 1;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .DZBVr {
   color: var(--logo-golden-color) !important;
   font-size: calc(1.375rem + 1.5vw) !important;
 }
 
-.jdVdAT a {
-  background-color: black !important;
+.OGcBAyJGBej5Gnyi9hGA {
+  background: black !important;
+}
+
+.css-gt0bbg-MuiPaper-root-MuiAlert-root {
+  color: white !important;
 }

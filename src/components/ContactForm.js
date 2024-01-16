@@ -15,7 +15,7 @@ const Alert = forwardRef(function Alert(props, ref) {
 export default function ContactForm() {
     const [isLoading, setIsLoading] = useState(false);
     const [openSuccess, setOpenSuccess] = useState(false);
-    const [openFailure, setOpenFailure] = useState(false);
+    const [openFailure, setOpenFailure] = useState(true);
 
     const ContactSchema = Yup.object().shape({
         name: Yup.string().required("Name is required"),
@@ -99,7 +99,7 @@ export default function ContactForm() {
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
             >
                 <Alert onClose={handleCloseSnackbar} severity="success" sx={{ width: '100%' }}>
-                    Query sent successfully
+                    Sign Up Successful!!
                 </Alert>
             </Snackbar>
 
@@ -109,7 +109,7 @@ export default function ContactForm() {
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
             >
                 <Alert onClose={handleCloseSnackbar} severity="warning" sx={{ width: '100%' }}>
-                    Failed to send query at the moment. Try again after sometime.
+                    Failed to sign up at the moment. Try again after sometime.
                 </Alert>
             </Snackbar>
 
@@ -170,7 +170,7 @@ export default function ContactForm() {
                             },
                         }}
                     >
-                        <h3 style={{ marginBottom: '0rem' }}>Sign Up</h3>
+                        Sign Up
                     </LoadingButton>
                 </Stack>
 

@@ -1,5 +1,5 @@
 const generateEmailTemplate = (name, email, phone, message) => {
-    return `
+  return `
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     
@@ -148,7 +148,7 @@ const generateEmailTemplate = (name, email, phone, message) => {
                                     <tr>
                                       <td style="padding-right: 0px;padding-left: 0px;" align="center">
     
-                                        <img align="center" border="0" src="https://assets.unlayer.com/projects/163102/1694415209569-logo2.png" alt="" title="" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 116.67px;"
+                                        <img align="center" border="0" src="https://assets.unlayer.com/projects/163102/1690002739685-263746.png" alt="" title="" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 116.67px;"
                                           width="116.67" />
     
                                       </td>
