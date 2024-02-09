@@ -1,4 +1,4 @@
-import { Grid, Snackbar, Stack } from "@mui/material";
+import { Button, Grid, Snackbar, Stack, Typography } from "@mui/material";
 import FormProvider from "./hook-form/FormProvider";
 import { forwardRef, useState } from "react";
 import MuiAlert from '@mui/material/Alert';
@@ -7,6 +7,7 @@ import { LoadingButton } from "@mui/lab";
 import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import axios from "axios";
 
 const Alert = forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -51,22 +52,21 @@ export default function ContactForm() {
         try {
             setIsLoading(true);
 
-            const response = await fetch("/api/send-mail", {
-                method: "POST",
+            const response = await axios.post(`/api/send-mail`, data, {
                 headers: {
                     "Content-Type": "application/json",
-                },
-                body: JSON.stringify(data),
+                }
             });
 
             console.log(response);
+            setOpenSuccess(true);
 
-            if (response.ok) {
-                setOpenSuccess(true);
-            }
-            else {
-                setOpenFailure(true);
-            }
+            // if (response.ok) {
+            //     setOpenSuccess(true);
+            // }
+            // else {
+            //     setOpenFailure(true);
+            // }
         }
         catch (error) {
             console.error(error);
@@ -75,6 +75,7 @@ export default function ContactForm() {
                 ...error,
                 message: error.message,
             });
+            setOpenFailure(true);
         }
         finally {
             reset();
@@ -99,7 +100,7 @@ export default function ContactForm() {
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
             >
                 <Alert onClose={handleCloseSnackbar} severity="success" sx={{ width: '100%' }}>
-                    Sign Up Successful!!
+                    Booking Successful!!
                 </Alert>
             </Snackbar>
 
@@ -109,7 +110,7 @@ export default function ContactForm() {
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
             >
                 <Alert onClose={handleCloseSnackbar} severity="warning" sx={{ width: '100%' }}>
-                    Failed to sign up at the moment. Try again after sometime.
+                    No Slots available. Sorry For Inconvenience. Try again later.
                 </Alert>
             </Snackbar>
 
@@ -155,23 +156,36 @@ export default function ContactForm() {
 
                     </Stack>
 
-                    <LoadingButton
-                        className="btn-default"
-                        color="primary"
-                        size='large'
-                        type="submit"
-                        variant="contained"
-                        loading={isLoading}
-                        sx={{
-                            background: "linear-gradient(95deg,#059dff 15%,#6549d5 45%,#e33fa1 75%,#fb5343) 95%/200% 100%",
-                            color: (theme) => theme.palette.mode === "light" ? "grey.800" : "common.white",
-                            '&:hover': {
-                                boxShadow: "0 0 20px 5px rgba(251,83,67,0.2)"
-                            },
-                        }}
-                    >
-                        Sign Up
-                    </LoadingButton>
+                    {
+                        isLoading ?
+                            <Button disabled type="submit" variant='contained' size='large' sx={{
+                                backgroundColor: '#05689F',
+                                textTransform: 'none',
+                                px: 10,
+                                '&:hover': {
+                                    backgroundColor: "#05689F"
+                                }
+                            }}
+                            >
+                                <Typography variant='body1'>
+                                    <div class="spinner-border" role="status"></div>
+                                </Typography>
+                            </Button>
+                            :
+                            <Button type="submit" variant='contained' size='large' sx={{
+                                backgroundColor: '#05689F',
+                                textTransform: 'none',
+                                px: 10,
+                                '&:hover': {
+                                    backgroundColor: "#05689F"
+                                }
+                            }}
+                            >
+                                <Typography variant='body1'>
+                                    Book a Free Stategy Call
+                                </Typography>
+                            </Button>
+                    }
                 </Stack>
 
             </FormProvider>

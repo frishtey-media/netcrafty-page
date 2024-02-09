@@ -17,22 +17,24 @@ export default function ContactPopup({ open, handleClose }) {
                 onClose={handleClose}
             >
                 <DialogTitle sx={{
-                    backgroundColor: 'rgba(0,0,0,0.5)',
-                    color: 'white'
+                    backgroundColor: 'rgba(255,255,255)',
+                    color: 'black'
                 }}>
                     <Stack
                         direction={"row"}
                         alignItems="center"
                         justifyContent="space-between"
                     >
-                        <Typography variant='h6'>{"Let's get to know each other"}</Typography>
+                        <Typography variant='h6'>
+                            Book your <span className="text-blue fw-bold">FREE</span> Slot right now for consultation
+                        </Typography>
                         <IconButton onClick={handleClose}>
-                            <XCircle weight='fill' color="white" size={24} />
+                            <XCircle weight='fill' color="black" size={24} />
                         </IconButton>
                     </Stack>
                 </DialogTitle>
                 <DialogContent sx={{
-                    backgroundColor: 'rgba(0,0,0,0.5)'
+                    backgroundColor: 'rgba(255,255,255)'
                 }}>
                     <ContactForm />
                 </DialogContent>

@@ -16,6 +16,7 @@
     "@mui/lab": "^5.0.0-alpha.158",
     "@mui/material": "^5.15.2",
     "@mui/styles": "^5.15.2",
+    "axios": "^1.6.7",
     "bootstrap": "^5.3.2",
     "next": "14.0.4",
     "nodemailer": "^6.9.8",
