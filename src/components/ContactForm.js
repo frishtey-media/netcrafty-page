@@ -13,7 +13,7 @@ const Alert = forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
-export default function ContactForm() {
+export default function ContactForm({ handleClose }) {
     const [isLoading, setIsLoading] = useState(false);
     const [openSuccess, setOpenSuccess] = useState(false);
     const [openFailure, setOpenFailure] = useState(true);
@@ -60,13 +60,6 @@ export default function ContactForm() {
 
             console.log(response);
             setOpenSuccess(true);
-
-            // if (response.ok) {
-            //     setOpenSuccess(true);
-            // }
-            // else {
-            //     setOpenFailure(true);
-            // }
         }
         catch (error) {
             console.error(error);
@@ -176,6 +169,7 @@ export default function ContactForm() {
                                 backgroundColor: '#05689F',
                                 textTransform: 'none',
                                 px: 10,
+                                py: 3.5,
                                 '&:hover': {
                                     backgroundColor: "#05689F"
                                 }

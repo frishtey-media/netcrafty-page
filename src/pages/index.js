@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const [open, setOpen] = useState(false);
 
@@ -60,8 +60,8 @@ export default function Home() {
                       priority
                     />
                   </Link>
-                  <h5 className='text-black'>Ready To Scale Your Business?</h5>
-                  <h1 className='fw-bold text-black'>We&#39;ll Manage Your Advertising Campaigns For FREE Until You Get Results!</h1>
+                  <h5 className='text-black'>Ready To Scale Your <span className='text-blue fw-bold'>Business?</span></h5>
+                  <h1 className='fw-bold text-black' style={{ lineHeight: '1.5' }}>We&#39;ll Manage Your <span className='text-blue'>Advertising Campaigns</span> For You to Yield Best Results!</h1>
                   {/* <Button size='large' className="btn-default" onClick={handleSignupOpen}>
                     <h3 style={{ marginBottom: '0rem' }}>Sign Up</h3>
                   </Button> */}
@@ -69,6 +69,7 @@ export default function Home() {
                     backgroundColor: '#05689F',
                     textTransform: 'none',
                     px: 10,
+                    py: 3.5,
                     '&:hover': {
                       backgroundColor: "#05689F"
                     }
@@ -109,6 +110,7 @@ export default function Home() {
           backgroundColor: '#05689F',
           textTransform: 'none',
           px: 10,
+          py: 3.5,
           '&:hover': {
             backgroundColor: "#05689F"
           }
@@ -149,6 +151,7 @@ export default function Home() {
           backgroundColor: '#05689F',
           textTransform: 'none',
           px: 10,
+          py: 3.5,
           '&:hover': {
             backgroundColor: "#05689F"
           }
@@ -192,6 +195,7 @@ export default function Home() {
           backgroundColor: '#05689F',
           textTransform: 'none',
           px: 10,
+          py: 3.5,
           '&:hover': {
             backgroundColor: "#05689F"
           }
@@ -211,25 +215,25 @@ export default function Home() {
 
         <Grid container spacing={10}>
           <Grid item xs={12} sm={6} md={3} lg={3}>
-            <img src='/download.webp' alt='Netcrafty' style={{ width: '100%' }} /><br />
+            <img src='/download.webp' alt='Netcrafty' style={{ width: isMobile ? '50%' : '70%', marginLeft: 'auto', marginRight: 'auto' }} /><br />
             <Typography variant='body1' className='text-center'>
               Expertise that drive results
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6} md={3} lg={3}>
-            <img src='/download-1.webp' alt='Netcrafty' style={{ width: '100%' }} /><br />
+            <img src='/download-1.webp' alt='Netcrafty' style={{ width: isMobile ? '50%' : '70%', marginLeft: 'auto', marginRight: 'auto' }} /><br />
             <Typography variant='body1' className='text-center'>
               Rapid and Organic Growth
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6} md={3} lg={3}>
-            <img src='/download-2.webp' alt='Netcrafty' style={{ width: '100%' }} /><br />
+            <img src='/download-2.webp' alt='Netcrafty' style={{ width: isMobile ? '50%' : '70%', marginLeft: 'auto', marginRight: 'auto' }} /><br />
             <Typography variant='body1' className='text-center'>
               Professional Management
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6} md={3} lg={3}>
-            <img src='/download-3.webp' alt='Netcrafty' style={{ width: '100%' }} /><br />
+            <img src='/download-3.webp' alt='Netcrafty' style={{ width: isMobile ? '50%' : '70%', marginLeft: 'auto', marginRight: 'auto' }} /><br />
             <Typography variant='body1' className='text-center'>
               Niche Metholodologies
             </Typography>
@@ -241,6 +245,7 @@ export default function Home() {
           backgroundColor: '#05689F',
           textTransform: 'none',
           px: 10,
+          py: 3.5,
           '&:hover': {
             backgroundColor: "#05689F"
           }
