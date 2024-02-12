@@ -213,7 +213,7 @@ const generateEmailTemplate = (name, email, phone, message) => {
                                     <p style="line-height: 140%;">We have recieved your request. Our team will get back to you at the earliest.</p>
                                     <p style="line-height: 140%;">&nbsp;</p>
                                     <p style="line-height: 140%;">&nbsp;</p>
-                                    <p style="line-height: 140%;">Thanks &amp; Regards<br>GTech Mansa</p>
+                                    <p style="line-height: 140%;">Thanks &amp; Regards<br>Team Netcrafty</p>
                                   </div>
     
                                 </td>
