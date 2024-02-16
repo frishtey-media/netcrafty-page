@@ -178,11 +178,15 @@ export default function Home() {
               <ul style={{ marginTop: '20px' }}>
                 <li>Digital Marketing</li>
                 <li>Social Media Marketing</li>
-                <li>Performance Marketing</li>
                 <li>Graphic Designing</li>
+                <li>Video Editing</li>
+                <li>AdShoot</li>
                 <li>Content Marketing</li>
                 <li>Search Engine Optimisation</li>
                 <li>Digital Consultancy</li>
+                <li>Website Design and development</li>
+                <li>App Design and development</li>
+                <li>Printing</li>
               </ul>
             </h5>
           </Grid>
