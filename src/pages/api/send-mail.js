@@ -23,7 +23,7 @@ const sendNodeMail = async ({
             from: "netcrafty.com@gmail.com",
             to: email,
             cc: "netcrafty.com@gmail.com",
-            subject: "NetCrafty - Quick Sign Up - " + subject,
+            subject: "NetCrafty - Booking for Consultation - " + subject,
             html: html,
         };
 
