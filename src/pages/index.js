@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Button, Container, Divider, Grid, Stack, Toolbar, Typography, useMediaQuery, useTheme } from '@mui/material'
 import Footer from '@/components/footer'
 import ContactPopup from '@/components/ContactPopup'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 import CalendlyWidget from '@/components/CalendlyWidget'
 import CalendlyWidget2 from '@/components/CalendlyWidget2'
@@ -19,6 +19,12 @@ export default function Home() {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      handleSignupOpen();
+    }, 2500);
+  }, []);
 
   function handleSignupOpen() {
     setOpen(true);
