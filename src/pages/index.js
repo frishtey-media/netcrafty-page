@@ -1,16 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Link from 'next/link'
-import { Button, Container, Divider, Grid, Stack, Toolbar, Typography, useMediaQuery, useTheme } from '@mui/material'
-import Footer from '@/components/footer'
-import ContactPopup from '@/components/ContactPopup'
-import { useEffect, useState } from 'react'
-import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
-import CalendlyWidget from '@/components/CalendlyWidget'
-import CalendlyWidget2 from '@/components/CalendlyWidget2'
-import Clients from '@/components/Clients'
-import ClientWidget from '@/components/ClientWidget'
+import Head from 'next/head';
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import Link from 'next/link';
+import { Button, Container, Divider, Grid, Stack, Toolbar, Typography, useMediaQuery, useTheme } from '@mui/material';
+import Footer from '@/components/footer';
+import ContactPopup from '@/components/ContactPopup';
+import { useEffect, useState } from 'react';
+import CalendlyWidget2 from '@/components/CalendlyWidget2';
+import GoogleReviews from '@/components/GoogleReviews';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -433,8 +430,18 @@ export default function Home() {
         </div>
       </div>
 
-      <Container>
+      {/* <Container>
         <GoogleReviewsWidget />
+      </Container> */}
+
+      <Toolbar />
+
+      <h1 className='text-center text-blue fw-bold'>
+        Some Client Reviews
+      </h1>
+
+      <Container>
+        <GoogleReviews />
       </Container>
 
       <Toolbar />
