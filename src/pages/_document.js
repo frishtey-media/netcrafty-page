@@ -7,6 +7,21 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          {/* Google Analytics */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-VV623Q91Z7"></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-VV623Q91Z7');
+              `,
+            }}
+          />
+          {/* End Google Analytics */}
+
+
           {/* Facebook Pixel Code */}
           <script
             dangerouslySetInnerHTML={{
