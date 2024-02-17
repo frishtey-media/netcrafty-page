@@ -273,20 +273,171 @@ export default function Home() {
       <CalendlyWidget2 />
 
       <Toolbar />
-      <Toolbar />
 
-      {/* <Clients /> */}
       <h1 className='text-center text-blue fw-bold'>
         Our Awesome Clients
       </h1>
-      <ClientWidget />
 
-      <Toolbar />
+      {/* <Clients /> */}
+      <div className="client-slider" >
+        <div className="slide-track2">
+          <div className="client-slide">
+            <img src="/logos/1.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="TCI Immigration" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/2.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="AVP Immigration" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/3.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Alpine Education" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/4.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Lame Salon" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/5.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Indrani Hospital" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/6.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Himanshu Advertisers" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/7.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="P" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/8.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Joint Emporio" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/9.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="RG Wealth" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/10.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Make Easy Job" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/11.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Vikram Gagan Hospital" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/12.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Verma Sanitation" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/13.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Nevatia Diamonds" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/14.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Innovative Global School" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/15.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Talk I'll Listen" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/16.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Enagic Kangen Water" />
+          </div>
+
+
+          <div className="client-slide">
+            <img src="/logos/1.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="TCI Immigration" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/2.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="AVP Immigration" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/3.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Alpine Education" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/4.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Lame Salon" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/5.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Indrani Hospital" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/6.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Himanshu Advertisers" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/7.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="P" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/8.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Joint Emporio" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/9.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="RG Wealth" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/10.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Make Easy Job" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/11.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Vikram Gagan Hospital" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/12.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Verma Sanitation" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/13.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Nevatia Diamonds" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/14.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Innovative Global School" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/15.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Talk I'll Listen" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/16.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Enagic Kangen Water" />
+          </div>
+
+
+          <div className="client-slide">
+            <img src="/logos/1.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="TCI Immigration" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/2.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="AVP Immigration" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/3.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Alpine Education" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/4.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Lame Salon" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/5.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Indrani Hospital" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/6.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Himanshu Advertisers" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/7.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="P" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/8.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Joint Emporio" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/9.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="RG Wealth" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/10.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Make Easy Job" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/11.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Vikram Gagan Hospital" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/12.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Verma Sanitation" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/13.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Nevatia Diamonds" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/14.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Innovative Global School" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/15.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Talk I'll Listen" />
+          </div>
+          <div className="client-slide">
+            <img src="/logos/16.png" alt="Netcrafty" className='align-self-center' data-bs-toggle="tooltip" data-bs-placement="top" title="Enagic Kangen Water" />
+          </div>
+
+        </div>
+      </div>
 
       <Container>
         <GoogleReviewsWidget />
       </Container>
 
+      <Toolbar />
       <Toolbar />
 
       <ContactPopup open={open} handleClose={handleClose} />

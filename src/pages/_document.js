@@ -1,6 +1,7 @@
 // pages/_document.js
 
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 class MyDocument extends Document {
   render() {
@@ -8,8 +9,12 @@ class MyDocument extends Document {
       <Html>
         <Head>
           {/* Google Analytics */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-VV623Q91Z7"></script>
-          <script
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=G-VV623Q91Z7`}
+            strategy="beforeInteractive"
+          />
+          <Script
+            strategy="lazyOnload"
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
@@ -21,9 +26,9 @@ class MyDocument extends Document {
           />
           {/* End Google Analytics */}
 
-
           {/* Facebook Pixel Code */}
-          <script
+          <Script
+            strategy="lazyOnload"
             dangerouslySetInnerHTML={{
               __html: `
                 !function(f,b,e,v,n,t,s)

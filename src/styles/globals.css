@@ -667,3 +667,118 @@ copyright-style-one .ft-menu li a {
   background-color: var(--logo-blue-color) !important;
   color: white;
 }
+
+
+/*  Client Slider  Start  */
+
+.client-slider {
+  height: 250px;
+  position: relative;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.client-slider::before,
+.client-slider::after {
+  position: absolute;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 40%);
+  content: '';
+  height: 100%;
+  width: 25%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.client-slider::before {
+  left: 0;
+  top: 0;
+}
+
+.client-slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slide-track2 {
+  width: calc(300px * 48);
+  display: flex;
+  animation: scroll2 48s linear infinite;
+  justify-content: space-around;
+}
+
+.client-slide {
+  width: 180px;
+  height: 225px;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.client-slide img {
+  padding: 5%;
+}
+
+.client-slide:hover {
+  transform: scale(1.1)
+}
+
+.client-slider:hover .slide-track2 {
+  animation-play-state: paused;
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(calc(-300px * 16));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide-track2 {
+    width: calc(200px * 48);
+  }
+
+  .client-slide {
+    width: 140px;
+    height: 175px;
+  }
+
+  .client-slide img {
+    padding: 2%;
+  }
+
+  .client-slider::before,
+  .client-slider::after {
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 0%) !important;
+    content: '';
+    height: 100%;
+    width: 25%;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  @keyframes scroll2 {
+    0% {
+      transform: translateX(0px);
+    }
+
+    100% {
+      transform: translateX(calc(-300px * 16));
+    }
+  }
+}
+
+/* Client Slider End */
