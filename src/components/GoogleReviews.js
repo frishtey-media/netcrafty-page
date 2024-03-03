@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 
+// https://www.commoninja.com/google-reviews/editor/settings/4b8099c5-16bf-4d4f-aa5d-23a2700a3d3a?projectId=
+
 const GoogleReviews = () => {
     useEffect(() => {
         const script = document.createElement('script');
