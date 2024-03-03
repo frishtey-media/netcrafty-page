@@ -9,11 +9,11 @@ class MyDocument extends Document {
       <Html>
         <Head>
           {/* Google Analytics */}
-          <Script
+          <Script id='google-analytics'
             src={`https://www.googletagmanager.com/gtag/js?id=G-VV623Q91Z7`}
             strategy="beforeInteractive"
           />
-          <Script
+          <Script id='facebook-pexels'
             strategy="lazyOnload"
             dangerouslySetInnerHTML={{
               __html: `
