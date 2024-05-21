@@ -436,7 +436,7 @@ export default function Home() {
 
       <Toolbar />
 
-      <h1 className='text-center text-blue fw-bold'>
+      <h1 id='testimonials' className='text-center text-blue fw-bold'>
         Some Client Reviews
       </h1>
 
