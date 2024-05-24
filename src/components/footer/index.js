@@ -2,6 +2,8 @@ import { Box, Divider, Stack, Typography } from "@mui/material";
 import Link from "next/link";
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
         <>
             <Divider sx={{ borderColor: 'white' }} />
@@ -48,9 +50,9 @@ const Footer = () => {
                                     </h4>
                                     <div className="inner">
                                         <ul className="footer-link link-hover">
-                                            <li><a href="https://www.netcrafty.com/pricing" target="_blank">Pricing</a></li>
+                                            <li><a href="https://www.netcrafty.com/contact" target="_blank">Pricing</a></li>
                                             <li><a href="https://www.netcrafty.com/about" target="_blank">About Us</a></li>
-                                            <li><a href="https://www.netcrafty.com/testimonial" target="_blank">Testimonial</a></li>
+                                            <li><a href="/#testimonials">Testimonial</a></li>
                                             <li><a href="https://www.netcrafty.com/#portfolio" target="_blank">Portfolio</a></li>
                                         </ul>
                                     </div>
@@ -148,21 +150,21 @@ const Footer = () => {
                                 <div className="copyright-left">
                                     <ul className="ft-menu link-hover justify-content-center">
                                         <li>
-                                            <Link href="/">
+                                            <Link target="_blank" href="https://www.netcrafty.com/privacy-policy">
                                                 <span className="theme-gradient" style={{ fontWeight: '600' }}>
                                                     Privacy Policy
                                                 </span>
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/">
+                                            <Link target="_blank" href="https://www.netcrafty.com/terms-and-conditions">
                                                 <span className="theme-gradient" style={{ fontWeight: '600' }}>
                                                     Terms and Conditions
                                                 </span>
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/">
+                                            <Link target="_blank" href="https://www.netcrafty.com/contact">
                                                 <span className="theme-gradient" style={{ fontWeight: '600' }}>
                                                     Contact Us
                                                 </span>
@@ -173,7 +175,7 @@ const Footer = () => {
                             </div>
                             <div className="col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div className="copyright-right text-center text-md-center">
-                                    <span className="copyright-text text-black align-items-center justify-content-end">© NetCrafty 2023</span>
+                                    <span className="copyright-text text-black align-items-center justify-content-end">© NetCrafty {currentYear}</span>
                                 </div>
                             </div>
                         </div>

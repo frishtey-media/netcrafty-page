@@ -15,7 +15,7 @@ const GoogleReviews = () => {
     }, []);
 
     return (
-        <div className="commonninja_component pid-4b8099c5-16bf-4d4f-aa5d-23a2700a3d3a"></div>
+        <div className="commonninja_component pid-d13e7bb6-5748-4fc5-b84d-ec0e4f8adc2c"></div>
     );
 };
 
