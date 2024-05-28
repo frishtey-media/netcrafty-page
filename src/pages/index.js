@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>NetCrafty</title>
+        <title>Netcrafty</title>
         <meta name="description" content="Trusted global software company offering custom IT solutions and digital/social marketing. Build your team with us for success!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/title-logo.png" />
